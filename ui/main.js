@@ -11,8 +11,7 @@ img.onclick = function() {
     var interval = setinterval(moveright,50);
 };
 //counter code
-var button = document.getElemenyById('counter')
-var counter = 0;
+
 button.onclick = function(){
     //make a request to counter endpoint
     var request = new XMLhttprequest();
@@ -30,6 +29,8 @@ button.onclick = function(){
     };
 //render the variable in the correct span
 //make the request
+var button = document.getElemenyById('counter')
+var counter = 0;
 request.open('GET', 'http://gokhu.imad.hasura-app.io/counter',true);
 request.send(null);
 };
